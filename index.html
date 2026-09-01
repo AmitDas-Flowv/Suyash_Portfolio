@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Suyash Kelkar — Music Composer & Producer</title>
+  <meta name="description" content="Work catalogue of Suyash Kelkar — music composer & producer. Original film scores, OTT soundtracks, brand films and independent music across Hindi and Marathi entertainment." />
+  <meta name="author" content="Suyash Kelkar" />
+
+  <!-- Open Graph / social sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Suyash Kelkar — Music Composer & Producer" />
+  <meta property="og:description" content="Original film scores, OTT soundtracks, brand films and independent music." />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230b0b0f'/%3E%3Ctext x='50' y='68' font-size='58' font-family='Georgia,serif' fill='%23e0b166' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <!-- grain + ambient glow -->
+  <div class="grain" aria-hidden="true"></div>
+  <div class="ambient" aria-hidden="true">
+    <span class="blob blob--1"></span>
+    <span class="blob blob--2"></span>
+    <span class="blob blob--3"></span>
+  </div>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <a class="nav__brand" href="#top">
+      <span class="nav__mark">SK</span>
+      <span class="nav__name">Suyash Kelkar</span>
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#films">Films &amp; OTT</a>
+      <a href="#brands">Brand Films</a>
+      <a href="#session">Session</a>
+      <a href="#indie">Independent</a>
+      <a href="#contact" class="nav__cta">Get in touch</a>
+    </nav>
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__inner">
+        <p class="hero__eyebrow reveal">Music Composer &amp; Producer</p>
+        <h1 class="hero__title">
+          <span class="reveal" style="--d:.05s">Suyash</span>
+          <span class="reveal hero__title--accent" style="--d:.15s">Kelkar</span>
+        </h1>
+        <p class="hero__lede reveal" style="--d:.28s" id="heroLede"></p>
+        <div class="hero__actions reveal" style="--d:.4s">
+          <a href="#films" class="btn btn--primary">Explore the work</a>
+          <a href="#contact" class="btn btn--ghost">Work with Suyash</a>
+        </div>
+        <ul class="hero__stats reveal" style="--d:.52s" id="heroStats"></ul>
+      </div>
+      <div class="hero__scroll" aria-hidden="true">
+        <span></span>Scroll
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about" id="about">
+      <div class="section__head reveal">
+        <span class="section__index">01</span>
+        <h2 class="section__title">The Artist</h2>
+      </div>
+      <div class="about__grid">
+        <div class="about__bio" id="aboutBio"></div>
+        <aside class="about__side reveal">
+          <div class="card-panel">
+            <h3 class="panel__label">Skills</h3>
+            <ul class="chips" id="skillChips"></ul>
+          </div>
+          <div class="card-panel">
+            <h3 class="panel__label">Digital Audio Workstations</h3>
+            <ul class="chips chips--muted" id="dawChips"></ul>
+          </div>
+          <div class="card-panel">
+            <h3 class="panel__label">Instruments</h3>
+            <p class="panel__text">Drums · Keyboards · Guitars · Percussion</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- FILMS & OTT -->
+    <section class="section" id="films">
+      <div class="section__head reveal">
+        <span class="section__index">02</span>
+        <h2 class="section__title">Films &amp; Web Series</h2>
+        <p class="section__sub">Original scores and background music across streaming platforms.</p>
+      </div>
+      <div class="film-grid" id="filmGrid"></div>
+
+      <h3 class="subhead reveal">Television</h3>
+      <div class="film-grid" id="tvGrid"></div>
+    </section>
+
+    <!-- BRANDS -->
+    <section class="section" id="brands">
+      <div class="section__head reveal">
+        <span class="section__index">03</span>
+        <h2 class="section__title">Advertising &amp; Brand Films</h2>
+        <p class="section__sub">Jingles, campaign films and brand music. Click any thumbnail to watch.</p>
+      </div>
+      <div class="video-grid" id="brandGrid"></div>
+    </section>
+
+    <!-- SESSION -->
+    <section class="section" id="session">
+      <div class="section__head reveal">
+        <span class="section__index">04</span>
+        <h2 class="section__title">As a Session Musician</h2>
+        <p class="section__sub">Taasha &amp; percussion on landmark film songs.</p>
+      </div>
+      <div class="video-grid" id="sessionGrid"></div>
+    </section>
+
+    <!-- INDIE -->
+    <section class="section" id="indie">
+      <div class="section__head reveal">
+        <span class="section__index">05</span>
+        <h2 class="section__title">Independent Music</h2>
+        <p class="section__sub">Original songs composed, produced and co-produced — on video and streaming.</p>
+      </div>
+      <div class="video-grid video-grid--mixed" id="indieGrid"></div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <div class="section__head reveal">
+        <span class="section__index">06</span>
+        <h2 class="section__title">Let's create something</h2>
+      </div>
+      <div class="contact__inner reveal">
+        <div class="contact__primary">
+          <a class="contact__email" id="contactEmail" href="#"></a>
+          <a class="contact__phone" id="contactPhone" href="#"></a>
+        </div>
+        <ul class="contact__socials" id="contactSocials"></ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Suyash Kelkar · Music Composer &amp; Producer</p>
+    <a href="#top" class="footer__top">Back to top ↑</a>
+  </footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
