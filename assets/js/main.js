@@ -247,23 +247,26 @@
     const nav = $("#nav");
     const toggle = $("#navToggle");
     const links = $(".nav__links");
+    const backdrop = $("#navBackdrop");
 
     const onScroll = () => nav.classList.toggle("is-scrolled", window.scrollY > 24);
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
 
-    toggle.addEventListener("click", () => {
-      const open = links.classList.toggle("is-open");
+    const setMenu = (open) => {
+      links.classList.toggle("is-open", open);
       toggle.classList.toggle("is-open", open);
+      if (backdrop) backdrop.classList.toggle("is-open", open);
+      document.body.classList.toggle("menu-open", open);
       toggle.setAttribute("aria-expanded", open ? "true" : "false");
+    };
+
+    toggle.addEventListener("click", () => setMenu(!links.classList.contains("is-open")));
+    if (backdrop) backdrop.addEventListener("click", () => setMenu(false));
+    links.querySelectorAll("a").forEach((a) => a.addEventListener("click", () => setMenu(false)));
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && links.classList.contains("is-open")) setMenu(false);
     });
-    links.querySelectorAll("a").forEach((a) =>
-      a.addEventListener("click", () => {
-        links.classList.remove("is-open");
-        toggle.classList.remove("is-open");
-        toggle.setAttribute("aria-expanded", "false");
-      })
-    );
   }
 
   /* ---------- Boot ---------- */
