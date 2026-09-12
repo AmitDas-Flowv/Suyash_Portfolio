@@ -216,7 +216,7 @@ const BRANDS = [
   { brand: "MultiFit Warriors", note: "Docuseries · Archis Patil", yt: "lqNZmdQ0VHA" },
   { brand: "MultiFit Warriors", note: "Docuseries · Rupal Shah", yt: "HmlK31pZ8FY" },
   { brand: "MultiFit Warriors", note: "Docuseries · Abhishek Gopal Krishnan", yt: "8oewBvMHYCU" },
-  { brand: "KRA Jewellers", note: "TVC", url: "https://www.youtube.com/watch?v=E1tiGuHaHT" },
+  { brand: "KRA Jewellers", note: "TVC", yt: "E1tiGuHaHTw" },
   { brand: "Starbucks", note: "Composed by Suyash Kelkar", url: "https://www.instagram.com/reel/C4dBrH4MKmf/", platform: "Instagram" },
 ];
 
